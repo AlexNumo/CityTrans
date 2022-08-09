@@ -10,13 +10,11 @@
     display: flex;
     justify-content: end;
     flex-direction: column;
-    // align-items:flex-end;
 }
 
 .x-position{
     display: flex;
     margin-right: 150px;
-    // width: 150px;
     justify-content: flex-end;
 }
 
@@ -26,16 +24,12 @@
 
 .info-position{
     text-transform: uppercase;
-    font-family: Poppins;
-    font-size: 100px;
-    font-weight: 900;
+    font-family: var(--main-font-family);
+    font-size: var(--big-font-size);
+    font-weight: var(--bold-font-weight);
     margin-top: 35px;
     margin-bottom: 25px;
     width: 839px;
-}
-
-.info-text{
-    // text-align: center;
 }
 
 .read-more{
@@ -45,9 +39,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     color: white;
-    background-color: #2372d5;
+    background-color: var(--main-color);
     text-transform: uppercase;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: var(--main-font-family);
     font-size: 10px;
-    font-weight: 700;
+    font-weight: var(--read-more-font-weight);
 }

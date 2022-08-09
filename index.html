@@ -6,31 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"> <!--==NORMALIZE==-->
-    <link rel="stylesheet" href="./css/main.min.css"> <!--==MY STYLES==-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 
 </head>
 
-<body style="overflow: hidden;">
-<!--========HEADER========================-->
+<body>
     <header class="container">
         <nav class="header-position">
                 <a class="logo" href="index.html">
                     <img src="./img/Logo.png" alt="CityTrans" width="80px">
                 </a>
-                <!-- <img 
-                style="position: absolute; width: 1000px; height: 1332px;
-                right: 800px; top: -350px;"
-                src="./img/Vector.png" alt="Vector"> -->
             <ul class="nav-position">
-                <li class="link-position">home</li>
-                <li class="link-position">transport</li>
-                <li class="link-position">bus stop</li>
-                <li class="link-position">route</li>
-                <li class="link-position">about us</li>
+                <li class="link-position">
+                    <a href="#">home</a></li>
+                <li class="link-position">
+                    <a href="#">transport</a></li>
+                <li class="link-position">
+                    <a href="#">bus stop</a></li>
+                <li class="link-position">
+                    <a href="#">route</a></li>
+                <li class="link-position">
+                    <a href="#">about us</a></li>
                 <li>
                 <button class="btn">
                     <img src="./img/BurgerMenu.png" alt="BurgerMenu" width="14px">
@@ -40,7 +40,6 @@
 
         </nav>
     </header>
-<!--========HERO========================-->  
     <section>
         <div class="section-style">
             <div class="hero-position">
@@ -53,8 +52,7 @@
                 <a class="read-more" href="https://www.google.com/search?q=city+trans">Read more</a>
             </div>
         </div>
-    </section>
-<!--========FOOTER========================-->      
+    </section>    
     <footer>
         <div class="footer-position">
             <ul class="footer-link">
@@ -81,26 +79,40 @@
             </ul>
         </div>
     </footer>
-
-<!--==============================BACKGROUND==========================-->
-
     <div>
         <div class="bck-img"></div>
     </div>
     <div id="menu" class="menu is-hidden">
         <div class="feedback">
+            <div class="feedback-top">
+                <img class="letter" src="./img/Letter.svg" alt="Letter">
+                <button class="close">
+                    <img src="./img/Close.svg" alt="Close" width="15px">
+                </button>
+            </div>
+            <div class="feedback-bottom">
+                <div class="max-words-position">
+                    <h3 class="max-words">Max words count</h3>
+                    <input class="input-position" type="number" onchange='eventForm(this.value)'>
+                </div>
+                <div class="text-position">
+                    <h3 class="max-words">Type your text</h3>
+                    <textarea id="word" oninput='countWord()' class="textarea-position"></textarea>
+                </div>
+            </div>
+            <div class="counter-position">
+                <div>
+                    <span id="show">0</span>
+                        <span>/</span>
+                        <span id="showMAx">0</span>
+                </div>
+                <script>
+                    
+                </script>
+            </div>
         </div>
     </div>
-
-    <!-- <div>
-        <img class="bck-vector" src="./img/Vector.png" alt="Vector">
-        <div>
-        <div>
-            <div class="bck-man"></div>
-        </div>
-        </div>
-    </div> -->
     <script src="./js/menu.js"></script>
+    <script src="./js/count.js"></script>
 </body>
-
 </html>
